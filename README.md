@@ -40,25 +40,24 @@ writeFrequenciesToFile: Writes the match count results to an output file.
 
 ## How to Use
 Compile the Program
-
 Open your terminal and navigate to the directory containing Solution.java. Compile and run the program. 
-
 Ensure that the paths to your raw input file, cleaned file, predefined words file, and result file are correctly specified in the main method.
-
 Process the Raw File
-
 Uncomment the processFile method call to clean your raw input file.
-
 Uncomment the checkAllEnglishLetters method call to validate the cleaned file.
-
 Uncomment the selectWords method call to randomly select words from the cleaned file to create the predefined words file.
-
 selectWords(pureFilePath, predefinedFilePath);
 Calculate Word Frequencies and Output Results
 
 Ensure the calculateWordFrequencies and writeFrequenciesToFile method calls are uncommented to calculate word frequencies and write the results to the output file.
 
+## What has been tested 
+raw.txt raw text from combinations of ebooks in https://www.gutenberg.org/ 
+pure.txt refined text from raw.txt
+predefined.txt randomly selected candidate words 
+result.txt final result 
+result.txt is the tested result based on pure.txt and predefined.txt 
+
 ## Customization
 Adjust the file paths in the main method to match your local file system.
 Modify the predefined words list to fit your specific use case.
-
